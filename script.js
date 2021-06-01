@@ -12,15 +12,16 @@ async function randomUser() {
 	const res = await fetch('https://randomuser.me/api/');
 	const data = await res.json();
 	const user = await data.results[0];
-
+	const mainPic = `https://source.unsplash.com/random/1280x720`;
+	console.log(mainPic);
 	setTimeout(() => {
-		showLoading(user);
-	}, 2500);
+		showLoading(user, mainPic);
+	}, 1500);
 }
 
-const showLoading = (user) => {
+const showLoading = (user, pic) => {
 	header.innerHTML = `<img
-        src="https://source.unsplash.com/random/1280x720"
+        src="${pic}"
         alt="">`;
 	title.innerHTML = `Lorem ipsum dolor sit amet.`;
 	excerpt.innerHTML = `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, itaque?`;
