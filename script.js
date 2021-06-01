@@ -12,12 +12,15 @@ async function randomUser() {
 	const res = await fetch('https://randomuser.me/api/');
 	const data = await res.json();
 	const user = await data.results[0];
-	console.log(user);
+
+	setTimeout(() => {
+		showLoading(user);
+	}, 2500);
 }
 
-const showLoading = () => {
+const showLoading = (user) => {
 	header.innerHTML = `<img
-        src="https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        src="https://source.unsplash.com/random/1280x720"
         alt="">`;
 	title.innerHTML = `Lorem ipsum dolor sit amet.`;
 	excerpt.innerHTML = `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, itaque?`;
@@ -29,7 +32,7 @@ const showLoading = () => {
 	animatedBgText.forEach((bgtext) =>
 		bgtext.classList.remove('animated-bg-text')
 	);
+	console.log(user);
 };
 
-setTimeout(showLoading, 2500);
 randomUser();
