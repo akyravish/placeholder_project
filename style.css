@@ -23,7 +23,7 @@ body {
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	width: 350px;
 	background-color: #fff;
-	border-radius: 30px;
+	border-radius: 20px;
 	overflow: hidden;
 }
 
@@ -50,7 +50,7 @@ body {
 }
 
 .profile-img {
-	border-radius: 50px;
+	border-radius: 50%;
 	overflow: hidden;
 	height: 40px;
 	width: 40px;
@@ -64,7 +64,7 @@ body {
 	flex-direction: column;
 	justify-content: space-around;
 	margin-left: 10px;
-	width: 100%;
+	width: 100px;
 }
 
 #name {
