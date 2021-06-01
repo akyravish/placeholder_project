@@ -8,7 +8,14 @@ const date = document.getElementById('date');
 const animatedBg = document.querySelectorAll('.animated-bg');
 const animatedBgText = document.querySelectorAll('.animated-bg-text');
 
-setTimeout(() => {
+async function randomUser() {
+	const res = await fetch('https://randomuser.me/api/');
+	const data = await res.json();
+	const user = await data.results[0];
+	console.log(user);
+}
+
+const showLoading = () => {
 	header.innerHTML = `<img
         src="https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
         alt="">`;
@@ -22,4 +29,7 @@ setTimeout(() => {
 	animatedBgText.forEach((bgtext) =>
 		bgtext.classList.remove('animated-bg-text')
 	);
-}, 2500);
+};
+
+setTimeout(showLoading, 2500);
+randomUser();
