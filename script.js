@@ -10,7 +10,7 @@ const animatedBgText = document.querySelectorAll('.animated-bg-text');
 
 setTimeout(() => {
 	header.innerHTML = `<img
-        src="https://images.unsplash.com/photo-1621864980675-4d7f27420a60?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixlib=rb-1.2.1&q=80&w=800"
+        src="https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
         alt="">`;
 	title.innerHTML = `Lorem ipsum dolor sit amet.`;
 	excerpt.innerHTML = `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, itaque?`;
