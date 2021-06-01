@@ -1,0 +1,22 @@
+{
+  "name": "placeholder_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akyravish/placeholder_project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akyravish/placeholder_project/issues"
+  },
+  "homepage": "https://github.com/akyravish/placeholder_project#readme",
+  "dependencies": {
+    "faker": "^5.5.3"
+  }
+}
